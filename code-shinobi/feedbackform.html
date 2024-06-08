@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+    <title>FeedBack Form</title>
+    <style>
+        *{
+            font-family: Roboto,Arial;
+            font-weight: 500;
+        }
+        body{
+          background-color: rgba(226, 143, 155, 0.404);
+          height:600px;
+          margin-top:125px;
+        }
+    form {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+      background: transparent;
+      border: 1px solid #ccc;
+      border:2px solid rgba(255,255,255,.5);
+      box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      background-color: #119b15;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #0db713; 
+       }
+       input[type="submit"]:active{
+        background-color: #0db713; 
+        opacity:0.6;
+       }
+       #suggestions{
+        width:675px;
+       }
+  </style>
+</head>
+<body>
+  <form>
+    <h1>Customer Feedback Form</h1>
+    <h3>Please take a minute to let us know how we're doing. Your feedback is invaluable to us!</h3>
+    <h2>Overall Experience</h2>
+    <label for="rating"><h4>How would you rate your overall experience with our website?</h4></label>
+    <select id="rating" name="rating">
+      <option value="1">Very Poor</option>
+      <option value="2">Poor</option>
+      <option value="3">Average</option>
+      <option value="4">Good</option>
+      <option value="5">Excellent</option>
+    </select>
+    <h3>Suggestions</h3>
+    <label for="suggestions">Do you have any suggestions for improving our website?</label>
+    <textarea id="suggestions" name="suggestions"></textarea>
+    <input type="submit" value="Submit Feedback">
+  </form>
+</body>
+</html>
+
+
+
+ 
